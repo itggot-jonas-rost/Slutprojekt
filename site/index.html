@@ -8,13 +8,46 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
         <body>
-            <header>
-                <a href="#" class="settings_icon"><img alt="Settings icon" title="Settings icon" src="./img/ic_settings_white_36dp.png"/></a>
-            </header>
-            <section class="profile_info">
-                <div class="profile_pic"></div>
-                <h1 class="profile_name">Name Name</h1>
-            </section>
+            <div id="profile_site" class="profile_site">
+                <header>
+                    <img alt="Logo" title="Logo" class="logo" src="./img/hype-bot_logo_mobile.png"/>
+                    <a href="#" class="settings_icon"><img alt="Settings icon" title="Settings icon" src="./img/ic_settings_white_36dp.png"/></a>
+                </header>
+                <section class="profile_info">
+                    <div class="profile_pic1" id="profile_pic1"><img alt="Logo" title="Logo" src="./img/hype-bot_logo_mobile.png"/></div>
+                    <h1 class="profile_name">Name Name</h1>
+                </section>
+
+                <section class="profile_photos">
+                    <div class="profile_slideshow">
+                    </div>
+                </section>
+
+                <section class="profile_options">
+                    <div class="profile_option">
+                        <div class="dropdown">
+                            <h2 onclick="Brag_dropdown()" class="option_text">Brag/Upload</h2>
+                            <div id="brag_Dropdown" class="dropdown_content">
+                                <a href="#" class="set_text">Upload from album</a>
+                                <a href="#" class="set_text">Take photo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile_option">
+                        <h2 class="option_text">My Hype-Bot</h2>
+                    </div>
+                    <div class="profile_option">
+                        <div class="dropdown">
+                            <h2 onclick="Customize_dropdown()" class="option_text">Customize...</h2>
+                            <div id="customize_Dropdown" class="dropdown_content">
+                                <a class="set_text"  onclick="change_profile_pic()">Change profile picture</a>
+                                <a href="#" class="set_text">Change name</a>
+                                <a href="#" class="set_text" onclick="change_style()" >Change style</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </body>
         <script src="js/script.js"></script>
     </html>
