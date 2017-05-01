@@ -89,6 +89,7 @@ header{
     background-color: black;
     width: 80%;
     height: 180px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .slideshow_img{
@@ -115,6 +116,9 @@ header{
     padding: 6px 12px 6px 12px;
     text-decoration: none;
     background-color: #f1f1f1;
+}
+.slideshow_left:active, .slideshow_right:active{
+   background-color: #7d7d7d; 
 }
 
 .profile_options{
