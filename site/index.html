@@ -8,11 +8,14 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
         <body>
+
             <div id="profile_site" class="profile_site">
+                
                 <header>
                     <img alt="Logo" title="Logo" class="logo" src="./img/hype-bot_logo_mobile.png"/>
                     <a href="#" class="settings_icon"><img alt="Settings icon" title="Settings icon" src="./img/ic_settings_white_36dp.png"/></a>
                 </header>
+
                 <section class="profile_info">
                     <div class="profile_pic1" id="profile_pic1"><img alt="Logo" title="Logo" src="./img/hype-bot_logo_mobile.png"/></div>
                     <h1 class="profile_name">Name Name</h1>
@@ -20,10 +23,19 @@
 
                 <section class="profile_photos">
                     <div class="profile_slideshow">
+
+                        <img class="slideshow_img" src="img_fjords.jpg">
+                        <img class="slideshow_img" src="img_lights.jpg">
+                        <img class="slideshow_img" src="img_mountains.jpg">
+                        <img class="slideshow_img" src="img_forest.jpg">
+
+                        <button class="slideshow_left" onclick="change_slideshow_show(-1)">&#10094;</button>
+                        <button class="slideshow_right" onclick="change_slideshow_show(+1)">&#10095;</button>
                     </div>
                 </section>
 
                 <section class="profile_options">
+
                     <div class="profile_option">
                         <div class="dropdown">
                             <h2 onclick="Brag_dropdown()" class="option_text">Brag/Upload</h2>
@@ -33,9 +45,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="profile_option">
                         <h2 class="option_text">My Hype-Bot</h2>
                     </div>
+
                     <div class="profile_option">
                         <div class="dropdown">
                             <h2 onclick="Customize_dropdown()" class="option_text">Customize...</h2>
@@ -46,8 +60,11 @@
                             </div>
                         </div>
                     </div>
+
                 </section>
+
             </div>
+
         </body>
         <script src="js/script.js"></script>
     </html>

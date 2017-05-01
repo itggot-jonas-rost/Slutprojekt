@@ -91,6 +91,32 @@ header{
     height: 180px;
 }
 
+.slideshow_img{
+    display: none;
+}
+
+.slideshow_left{
+    position: absolute;
+    left: 37.5px;
+    top: 358.5px;
+    font-size: 13px;
+    border: none;
+    padding: 6px 12px 6px 12px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+}
+
+.slideshow_right{
+    position: absolute;
+    right: 37.5px;
+    top: 358.5px;
+    font-size: 13px;
+    border: none;
+    padding: 6px 12px 6px 12px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+}
+
 .profile_options{
     display: flex;
     flex-direction: column;
