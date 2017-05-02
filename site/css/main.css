@@ -9,6 +9,7 @@ body{
 }
 
 header{
+    z-index: 10;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,6 +26,58 @@ header{
     left: 14px;
 }
 
+.toggle_site:nth-child(1){
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 140px;
+
+    background-image: url("../img/spritesheet_switch_icon.png");
+    background-repeat: no-repeat;
+
+    width: 95px;
+    height: 52px;
+    background-position: -5px -5px;
+}
+
+.toggle_site:nth-child(2){
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 140px;
+
+    background-image: url("../img/spritesheet_switch_icon.png");
+    background-repeat: no-repeat;
+    display: none;
+
+    width: 95px;
+    height: 52px;
+    background-position: -110px -5px;
+}
+
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-switch_icon_left {
+    width: 95px;
+    height: 52px;
+    background-position: -5px -5px;
+}
+
+.sprite-switch_icon_right {
+    width: 95px;
+    height: 52px;
+    background-position: -110px -5px;
+}
+
+
+
 .settings_icon{
     height: fit-content;
     position: absolute;
@@ -34,6 +87,7 @@ header{
 .profile_site{
     background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 66%, rgba(230,230,230,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
+    display: block;
 }
 
 .profile_site.clicked2{
@@ -87,13 +141,42 @@ header{
 .profile_slideshow{
     display: flex;
     background-color: black;
-    width: 80%;
+    width: 300px;
     height: 180px;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
-.slideshow_img{
+.slideshow_img:nth-child(1) {
+    background-image: url('../img/spritesheet_slide.png');
+    background-repeat: no-repeat;
     display: none;
+    width: 300px;
+    height: 180px;
+    background-position: -315px -5px;
+}
+.slideshow_img:nth-child(2){
+    background-image: url('../img/spritesheet_slide.png');
+    background-repeat: no-repeat;
+    display: none;
+    width: 300px;
+    height: 180px;
+    background-position: -315px -195px;
+}
+.slideshow_img:nth-child(3){
+    background-image: url('../img/spritesheet_slide.png');
+    background-repeat: no-repeat;
+    display: none;
+    width: 300px;
+    height: 180px;
+    background-position: -5px -5px;
+}
+.slideshow_img:nth-child(4){
+    background-image: url('../img/spritesheet_slide.png');
+    background-repeat: no-repeat;
+    display: none;
+    width: 300px;
+    height: 180px;
+    background-position: -5px -195px;
 }
 
 .slideshow_left{
@@ -181,7 +264,14 @@ header{
     display:block;
 }
 
+.hide {
+    display: none;
+}
 
+.social_site{
+    background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 66%, rgba(230,230,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
+}
 
 header_computer{
     display: flex;

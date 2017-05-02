@@ -1,3 +1,9 @@
+function toggle_site() {
+    document.getElementById("profile_site").classList.toggle("hide");
+    document.getElementById("social_site").classList.toggle("show");
+    
+}
+
 function Brag_dropdown() {
     document.getElementById("brag_Dropdown").classList.toggle("show");
 }

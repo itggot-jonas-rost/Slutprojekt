@@ -9,12 +9,16 @@
         </head>
         <body>
 
+            <header>
+                <img alt="Logo" title="Logo" class="logo" src="./img/hype-bot_logo_mobile.png"/>
+                <div class="toggle_site" onclick="toggle_site()">
+
+
+                </div>
+                <a href="#" class="settings_icon"><img alt="Settings icon" title="Settings icon" src="./img/ic_settings_white_36dp.png"/></a>
+            </header>
+
             <div id="profile_site" class="profile_site">
-                
-                <header>
-                    <img alt="Logo" title="Logo" class="logo" src="./img/hype-bot_logo_mobile.png"/>
-                    <a href="#" class="settings_icon"><img alt="Settings icon" title="Settings icon" src="./img/ic_settings_white_36dp.png"/></a>
-                </header>
 
                 <section class="profile_info">
                     <div class="profile_pic1" id="profile_pic1"><img alt="Logo" title="Logo" src="./img/hype-bot_logo_mobile.png"/></div>
@@ -24,10 +28,11 @@
                 <section class="profile_photos">
                     <div class="profile_slideshow">
 
-                        <img class="slideshow_img" src="img_fjords.jpg">
-                        <img class="slideshow_img" src="img_lights.jpg">
-                        <img class="slideshow_img" src="img_mountains.jpg">
-                        <img class="slideshow_img" src="img_forest.jpg">
+                        <div class="slideshow_img"></div>
+                        <div class="slideshow_img"></div>
+                        <div class="slideshow_img"></div>
+                        <div class="slideshow_img"></div>
+                        
 
                         <button class="slideshow_left" onclick="change_slideshow_show(-1)">&#10094;</button>
                         <button class="slideshow_right" onclick="change_slideshow_show(+1)">&#10095;</button>
@@ -64,6 +69,14 @@
                 </section>
 
             </div>
+
+            <div class="social_site" id="social_site"> 
+
+
+
+            </div>
+
+
 
         </body>
         <script src="js/script.js"></script>
