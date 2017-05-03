@@ -26,8 +26,8 @@ header{
     left: 14px;
 }
 
-.toggle_site:nth-child(1){
-    display: block;
+.toggle_site{
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -41,8 +41,8 @@ header{
     background-position: -5px -5px;
 }
 
-.toggle_site:nth-child(2){
-    /*display: flex;*/
+.toggle_site.clicked3{
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -50,7 +50,6 @@ header{
 
     background-image: url("../img/spritesheet_switch_icon.png");
     background-repeat: no-repeat;
-    display: none;
 
     width: 95px;
     height: 52px;
