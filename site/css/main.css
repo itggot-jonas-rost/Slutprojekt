@@ -57,12 +57,6 @@ header{
 }
 
 
-.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
 .sprite-switch_icon_left {
     width: 95px;
     height: 52px;
@@ -75,12 +69,46 @@ header{
     background-position: -110px -5px;
 }
 
-
-
 .settings_icon{
     height: fit-content;
     position: absolute;
     right: 14px;
+}
+
+.settings_slide{
+    height: 100%;
+    width: 0;
+    max-width: 415px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, rgba(26,35,50,1) 0%, rgba(72,77,106,1) 27%, rgba(72,77,106,1) 29%, rgba(72,77,106,1) 37%, rgba(152,94,111,1) 57%, rgba(72,77,106,1) 73%, rgba(72,77,106,1) 79%, rgba(72,77,106,1) 81%, rgba(26,35,50,1) 98%, rgba(26,35,50,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2332', endColorstr='#1a2332', GradientType=1 );
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    box-shadow: -30px 0px 20px rgba(0,0,0,0.4);
+
+}
+
+.settings_slide .closebtn {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 36px;
+    margin-right: 50px;
+    padding-left: 8px;
+}
+
+.settings_slide a {
+    padding: 8px 8px 8px 23px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Roboto Regular;
+    color: white;
+    display: block;
+    transition: 0.3s;
 }
 
 .profile_site{
@@ -137,15 +165,19 @@ header{
     padding-top: 32px;
 }
 
-.profile_slideshow{
+.slideshow_container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
+    background-size: cover;
+    position: relative;
     width: 300px;
     height: 180px;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
-.slideshow_img:nth-child(1) {
+.slideshow_img_profile:nth-child(1) {
     background-image: url('../img/spritesheet_slide.png');
     background-repeat: no-repeat;
     display: none;
@@ -153,7 +185,7 @@ header{
     height: 180px;
     background-position: -315px -5px;
 }
-.slideshow_img:nth-child(2){
+.slideshow_img_profile:nth-child(2){
     background-image: url('../img/spritesheet_slide.png');
     background-repeat: no-repeat;
     display: none;
@@ -161,7 +193,7 @@ header{
     height: 180px;
     background-position: -315px -195px;
 }
-.slideshow_img:nth-child(3){
+.slideshow_img_profile:nth-child(3){
     background-image: url('../img/spritesheet_slide.png');
     background-repeat: no-repeat;
     display: none;
@@ -169,7 +201,7 @@ header{
     height: 180px;
     background-position: -5px -5px;
 }
-.slideshow_img:nth-child(4){
+.slideshow_img_profile:nth-child(4){
     background-image: url('../img/spritesheet_slide.png');
     background-repeat: no-repeat;
     display: none;
@@ -180,8 +212,7 @@ header{
 
 .slideshow_left{
     position: absolute;
-    left: 37.5px;
-    top: 358.5px;
+    left:0;
     font-size: 13px;
     border: none;
     padding: 6px 12px 6px 12px;
@@ -191,8 +222,7 @@ header{
 
 .slideshow_right{
     position: absolute;
-    right: 37.5px;
-    top: 358.5px;
+    right: 0;
     font-size: 13px;
     border: none;
     padding: 6px 12px 6px 12px;
@@ -268,9 +298,43 @@ header{
 }
 
 .social_site{
+    display: none;
+}
+
+.social_site_show{
     background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 66%, rgba(230,230,230,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
+    display: block;
 }
+
+.social_hot{
+    display: flex;
+    justify-content: center;
+    padding-top: 96px;
+    padding-bottom: 16px;
+    border-bottom:1px #9c9594 solid; 
+}
+
+.slideshow_hot_text{
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 8px 0px 8px 0px;
+  
+  color: white;
+  margin: 0;
+  font-family: Roboto Regular;
+
+}
+
+.social_sale{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 header_computer{
     display: flex;

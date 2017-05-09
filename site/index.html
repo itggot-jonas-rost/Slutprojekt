@@ -15,7 +15,16 @@
                 <div class="toggle_site" id="toggle_site" onclick="toggle_site()">
                 </div>
 
-                <a href="#" class="settings_icon"><img alt="Settings icon" title="Settings icon" src="./img/ic_settings_white_36dp.png"/></a>
+
+                <nav id="mySettings" class="settings_slide">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
+                    <a href="#">Language</a>
+                    <a href="#">Account settings</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Support</a>
+                </nav>
+
+                <span onclick="openSettings()" class="settings_icon"><img alt="Settings icon" title="Settings icon" src="./img/ic_settings_white_36dp.png"/></span>
             </header>
 
             <div id="profile_site" class="profile_site">
@@ -26,16 +35,16 @@
                 </section>
 
                 <section class="profile_photos">
-                    <div class="profile_slideshow">
+                    <div class="slideshow_container">
 
-                        <div class="slideshow_img"></div>
-                        <div class="slideshow_img"></div>
-                        <div class="slideshow_img"></div>
-                        <div class="slideshow_img"></div>
+                        <div class="slideshow_img_profile"></div>
+                        <div class="slideshow_img_profile"></div>
+                        <div class="slideshow_img_profile"></div>
+                        <div class="slideshow_img_profile"></div>
                         
 
-                        <button class="slideshow_left" onclick="change_slideshow_show(-1)">&#10094;</button>
-                        <button class="slideshow_right" onclick="change_slideshow_show(+1)">&#10095;</button>
+                        <button class="slideshow_left" onclick="change_slideshow_profile_show(-1)">&#10094;</button>
+                        <button class="slideshow_right" onclick="change_slideshow_profile_show(+1)">&#10095;</button>
                     </div>
                 </section>
 
@@ -71,6 +80,38 @@
             </div>
 
             <div class="social_site" id="social_site"> 
+
+                <section class="social_hot">
+
+                    <div class="slideshow_container">
+
+                        <img alt="Hot pic" title="Hot pic" src="./img/loafers_scaled_mobile.jpg"/>
+
+                        <button class="slideshow_left">&#10094;</button>
+                        <button class="slideshow_right">&#10095;</button>
+
+                        <h2 class="slideshow_hot_text">🔥What's hot?🔥</h2>
+
+                    </div>
+
+                </section>
+
+                <section class="social_sale">
+
+                    <h2 class="option_text">Items for sale</h2>
+
+                    <div class="slideshow_container">
+
+                        <img alt="Hot pic" title="Hot pic" src="./img/loafers_scaled_mobile.jpg"/>
+
+                        <button class="slideshow_left">&#10094;</button>
+                        <button class="slideshow_right">&#10095;</button>
+
+                        <h2 class="slideshow_hot_text">Buy</h2>
+
+                    </div>
+
+                </section>
 
 
 
