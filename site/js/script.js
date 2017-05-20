@@ -1,8 +1,7 @@
 function toggle_site() {
     document.getElementById("profile_site").classList.toggle("hide");
     document.getElementById("social_site").classList.toggle("social_site_show");
-    document.getElementById("toggle_site").classList.toggle("clicked3");
-    
+    document.getElementById("toggle_site").classList.toggle("clicked3");  
 }
 
 function Brag_dropdown() {
@@ -45,4 +44,57 @@ function openSettings() {
 
 function closeSettings() {
     document.getElementById("mySettings").style.width = "0";
+}
+
+// function show_social_ipad_landscape() {
+//     document.getElementById("social_site_ipad_land").style.width = "67%";
+//     document.getElementById("social_site_ipad_land").classList.toggle("shadow_left");
+//     document.getElementById("profile_site").style.width = "33%";
+// }
+
+// function show_profile_ipad_landscape() {
+//     document.getElementById("profile_site").style.width = "67%";
+//     document.getElementById("profile_site").classList.toggle("shadow_right");
+//     document.getElementById("social_site_ipad_land").style.width = "33%";
+// }
+
+
+
+
+function show_social_ipad_landscape() {
+    var socialelement = document.getElementById("social_site_ipad_land");
+    var socialWidth = window.getComputedStyle(socialelement, null).getPropertyValue("width");
+    if (socialWidth != "710px") {
+        document.getElementById("social_site_ipad_land").style.width = "710px";
+        document.getElementById("profile_site").style.marginRight = "710px";
+        document.getElementById("profile_site").style.position = "relative";
+        document.getElementById("social_site_ipad_land").style.zIndex = "1";
+        document.getElementById("social_site_ipad_land").style.boxShadow = "-200px 0px 300px 200px rgba(0,0,0,0.75)";
+    } else {
+        document.getElementById("social_site_ipad_land").style.width = "";
+        document.getElementById("profile_site").style.marginRight = "0";
+        document.getElementById("profile_site").style.position = "absolute";
+        document.getElementById("social_site_ipad_land").style.zIndex = "0";
+        document.getElementById("social_site_ipad_land").style.boxShadow = "none";
+    }
+
+
+}
+
+function show_profile_ipad_landscape() {
+    var profileelement = document.getElementById("profile_site");
+    var profileWidth = window.getComputedStyle(profileelement, null).getPropertyValue("width");
+    if (profileWidth != "710px") {
+        document.getElementById("profile_site").style.width = "710px";
+        document.getElementById("social_site_ipad_land").style.marginLeft = "710px";
+        document.getElementById("social_site_ipad_land").style.position = "relative";
+        document.getElementById("profile_site").style.zIndex = "1";
+        document.getElementById("profile_site").style.boxShadow = "200px 0px 300px 200px rgba(0,0,0,0.75)";
+    } else {
+        document.getElementById("profile_site").style.width = "";
+        document.getElementById("social_site_ipad_land").style.marginLeft = "0";
+        document.getElementById("social_site_ipad_land").style.position = "absolute";
+        document.getElementById("profile_site").style.zIndex = "0";
+        document.getElementById("profile_site").style.boxShadow = "none";
+    }
 }
