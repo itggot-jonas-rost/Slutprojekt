@@ -10,6 +10,7 @@ function Brag_dropdown() {
 
 function Customize_dropdown() {
     document.getElementById("customize_Dropdown").classList.toggle("show");
+    document.getElementById("easter_egg").classList.toggle("fill_out");
 }
 
 function change_profile_pic() {
@@ -45,21 +46,6 @@ function openSettings() {
 function closeSettings() {
     document.getElementById("mySettings").style.width = "0";
 }
-
-// function show_social_ipad_landscape() {
-//     document.getElementById("social_site_ipad_land").style.width = "67%";
-//     document.getElementById("social_site_ipad_land").classList.toggle("shadow_left");
-//     document.getElementById("profile_site").style.width = "33%";
-// }
-
-// function show_profile_ipad_landscape() {
-//     document.getElementById("profile_site").style.width = "67%";
-//     document.getElementById("profile_site").classList.toggle("shadow_right");
-//     document.getElementById("social_site_ipad_land").style.width = "33%";
-// }
-
-
-
 
 function show_social_ipad_landscape() {
     var socialelement = document.getElementById("social_site_ipad_land");
