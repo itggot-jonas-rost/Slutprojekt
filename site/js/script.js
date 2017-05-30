@@ -6,11 +6,14 @@ function toggle_site() {
 
 function Brag_dropdown() {
     document.getElementById("brag_Dropdown").classList.toggle("show");
+    document.getElementById("easter_egg_desk2").classList.toggle("fill_out_brag");
+    document.getElementById("easter_egg_land2").classList.toggle("fill_out_brag");
 }
 
 function Customize_dropdown() {
     document.getElementById("customize_Dropdown").classList.toggle("show");
-    document.getElementById("easter_egg").classList.toggle("fill_out");
+    document.getElementById("easter_egg_desk1").classList.toggle("fill_out_custom");
+    document.getElementById("easter_egg_land1").classList.toggle("fill_out_custom");
 }
 
 function change_profile_pic() {
@@ -63,8 +66,6 @@ function show_social_ipad_landscape() {
         document.getElementById("social_site_ipad_land").style.zIndex = "0";
         document.getElementById("social_site_ipad_land").style.boxShadow = "none";
     }
-
-
 }
 
 function show_profile_ipad_landscape() {

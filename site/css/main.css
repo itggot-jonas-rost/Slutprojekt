@@ -1,6 +1,111 @@
 @font-face { font-family: Roboto Med; src: url('Roboto-Medium.ttf'); }
 @font-face { font-family: Roboto Regular; src: url('Roboto-Regular.ttf'); } 
 
+.toggle_site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 140px;
+
+    background-image: url("../img/spritesheet_logos.png");
+    background-repeat: no-repeat;
+
+    width: 95px;
+    height: 52px;
+    background-position: -63px -123px;
+}
+
+.toggle_site.clicked3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 140px;
+
+    background-image: url("../img/spritesheet_logos.png");
+    background-repeat: no-repeat;
+
+    width: 95px;
+    height: 52px;
+    background-position: -193px -5px;
+}
+
+.settings_icon{
+    height: fit-content;
+    position: absolute;
+    right: 14px;
+}
+
+.settings_slide{
+    height: 100%;
+    width: 0;
+    max-width: 415px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, rgba(26,35,50,1) 0%, rgba(72,77,106,1) 27%, rgba(72,77,106,1) 29%, rgba(72,77,106,1) 37%, rgba(152,94,111,1) 57%, rgba(72,77,106,1) 73%, rgba(72,77,106,1) 79%, rgba(72,77,106,1) 81%, rgba(26,35,50,1) 98%, rgba(26,35,50,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2332', endColorstr='#1a2332', GradientType=1 );
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    box-shadow: -30px 0px 20px rgba(0,0,0,0.4);
+}
+
+.profile_options{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 32px;
+}
+
+.profile_option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 66%, rgba(230,230,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
+    border-top: 1px #9c9594 solid;
+}
+
+.dropdown_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: rgba(245,245,245,1);
+    background: linear-gradient(to right, rgba(245,245,245,1) 0%, rgba(216,219,219,1) 51%, rgba(216,219,219,1) 59%, rgba(245,245,245,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5', GradientType=1 );
+    border: none;
+    text-decoration: none;
+    display: none;
+    box-shadow: inset 0px 21px 46px -11px rgba(51,51,51,1);
+    overflow: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.follow_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow_left:active, .slideshow_right:active{
+    background-color: #7d7d7d; 
+}
+
+.profile_option:active{
+    box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
 
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) { 
@@ -28,6 +133,14 @@
     .logo_mobile{
         position: absolute;
         left: 14px;
+
+        background-image: url("../img/spritesheet_logos.png");
+        background-repeat: no-repeat;
+        display: block;
+
+        width: 60px;
+        height: 60px;
+        background-position: -5px -5px;
     }
 
     .logo_tablet{
@@ -35,57 +148,16 @@
     }
 
     .toggle_site{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
         left: 140px;
-
-        background-image: url("../img/spritesheet_switch_icon.png");
-        background-repeat: no-repeat;
-
-        width: 95px;
-        height: 52px;
-        background-position: -5px -5px;
     }
 
     .toggle_site.clicked3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
         left: 140px;
-
-        background-image: url("../img/spritesheet_switch_icon.png");
-        background-repeat: no-repeat;
-
-        width: 95px;
-        height: 52px;
-        background-position: -110px -5px;
     }
 
-    .settings_icon{
-        height: fit-content;
-        position: absolute;
-        right: 14px;
-    }
+    
 
-    .settings_slide{
-        height: 100%;
-        width: 0;
-        max-width: 415px;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        right: 0;
-        background: linear-gradient(135deg, rgba(26,35,50,1) 0%, rgba(72,77,106,1) 27%, rgba(72,77,106,1) 29%, rgba(72,77,106,1) 37%, rgba(152,94,111,1) 57%, rgba(72,77,106,1) 73%, rgba(72,77,106,1) 79%, rgba(72,77,106,1) 81%, rgba(26,35,50,1) 98%, rgba(26,35,50,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2332', endColorstr='#1a2332', GradientType=1 );
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 0.5s;
-        box-shadow: -30px 0px 20px rgba(0,0,0,0.4);
-
-    }
+    
 
     .settings_slide .closebtn {
         position: absolute;
@@ -177,36 +249,32 @@
     }
 
     .slideshow_img_profile:nth-child(1) {
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/street_pump.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 300px;
         height: 180px;
-        background-position: -315px -5px;
     }
     .slideshow_img_profile:nth-child(2){
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/supreme_mountain.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 300px;
         height: 180px;
-        background-position: -315px -195px;
     }
     .slideshow_img_profile:nth-child(3){
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/boost_750_scaled.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 300px;
         height: 180px;
-        background-position: -5px -5px;
     }
     .slideshow_img_profile:nth-child(4){
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/street_art_scaled.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 300px;
         height: 180px;
-        background-position: -5px -195px;
     }
 
     .slideshow_left{
@@ -231,56 +299,18 @@
         opacity: 0.8;
     }
     
-    .slideshow_left:active, .slideshow_right:active{
-        background-color: #7d7d7d; 
-    }
+    
 
-    .profile_options{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 32px;
-    }
+    
 
-    .profile_option{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 66%, rgba(230,230,230,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
-        border-top: 1px #9c9594 solid;
-    }
+    
 
-    .profile_option:active{
-        box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.75);
-    }
-
+    
     .option_text{
         font-family: Roboto Regular;
     }
 
-    .dropdown_content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        background: rgba(245,245,245,1);
-        background: linear-gradient(to right, rgba(245,245,245,1) 0%, rgba(216,219,219,1) 51%, rgba(216,219,219,1) 59%, rgba(245,245,245,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5', GradientType=1 );
-        border: none;
-        text-decoration: none;
-        display: none;
-        box-shadow: inset 0px 21px 46px -11px rgba(51,51,51,1);
-        overflow: auto;
-    }
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
+ 
 
     .dropdown .dropdown_content .set_text{
         font-size: 20px;
@@ -321,7 +351,6 @@
         border-bottom:1px #9c9594 solid; 
     }
 
-
     .picture_tablet{
         display: none;
     }
@@ -344,7 +373,6 @@
         color: white;
         margin: 0;
         font-family: Roboto Regular;
-
     }
 
     .social_sale{
@@ -356,11 +384,10 @@
     }
 
     .img_sale_mobile{
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/boost_750_scaled.jpg');
         background-repeat: no-repeat;
         width: 300px;
         height: 180px;
-        background-position: -5px -5px;
     }
 
     .img_sale_tablet {
@@ -374,13 +401,7 @@
         padding-bottom: 16px;
     }
 
-    .follow_icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-    }
+    
 
     .follow_icon{
         border: 1px solid rgba(182,209,27,1);
@@ -418,6 +439,13 @@
     .logo_tablet{
         position: absolute;
         left: 14px;
+
+        background-image: url("../img/spritesheet_logos.png");
+        background-repeat: no-repeat;
+
+        width: 108px;
+        height: 108px;
+        background-position: -75px -5px;
     }
 
     .logo_mobile{
@@ -425,57 +453,14 @@
     }
 
     .toggle_site{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
         left: 336.5px;
-
-        background-image: url("../img/spritesheet_switch_icon.png");
-        background-repeat: no-repeat;
-
-        width: 95px;
-        height: 52px;
-        background-position: -5px -5px;
     }
 
     .toggle_site.clicked3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
         left: 336.5px;
-
-        background-image: url("../img/spritesheet_switch_icon.png");
-        background-repeat: no-repeat;
-
-        width: 95px;
-        height: 52px;
-        background-position: -110px -5px;
     }
 
-    .settings_icon{
-        height: fit-content;
-        position: absolute;
-        right: 14px;
-    }
-
-    .settings_slide{
-        height: 100%;
-        width: 0;
-        max-width: 415px;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        right: 0;
-        background: linear-gradient(135deg, rgba(26,35,50,1) 0%, rgba(72,77,106,1) 27%, rgba(72,77,106,1) 29%, rgba(72,77,106,1) 37%, rgba(152,94,111,1) 57%, rgba(72,77,106,1) 73%, rgba(72,77,106,1) 79%, rgba(72,77,106,1) 81%, rgba(26,35,50,1) 98%, rgba(26,35,50,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2332', endColorstr='#1a2332', GradientType=1 );
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 0.5s;
-        box-shadow: -30px 0px 20px rgba(0,0,0,0.4);
-
-    }
+ 
 
     .settings_slide .closebtn {
         position: absolute;
@@ -569,36 +554,32 @@
     }
 
     .slideshow_img_profile:nth-child(1) {
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/street_pump_tablet.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 600px;
         height: 360px;
-        background-position: -615px -5px;
     }
     .slideshow_img_profile:nth-child(2){
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/supreme_mountain_tablet.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 600px;
         height: 360px;
-        background-position: -615px -375px;
     }
     .slideshow_img_profile:nth-child(3){
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/boost_750_scaled_tablet.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 600px;
         height: 360px;
-        background-position: -5px -5px;
     }
     .slideshow_img_profile:nth-child(4){
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/street_art_scaled_tablet.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 600px;
         height: 360px;
-        background-position: -5px -375px;
     }
 
     .slideshow_left{
@@ -623,57 +604,18 @@
         opacity: 0.8;
     }
     
-    .slideshow_left:active, .slideshow_right:active{
-        background-color: #7d7d7d; 
-    }
+    
 
-    .profile_options{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 32px;
-    }
 
-    .profile_option{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 66%, rgba(230,230,230,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
-        border-top: 1px #9c9594 solid;
-    }
-
-    .profile_option:active{
-        box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.75);
-    }
+   
 
     .option_text{
         font-family: Roboto Regular;
         font-size: 50px;
     }
 
-    .dropdown_content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        background: rgba(245,245,245,1);
-        background: linear-gradient(to right, rgba(245,245,245,1) 0%, rgba(216,219,219,1) 51%, rgba(216,219,219,1) 59%, rgba(245,245,245,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5', GradientType=1 );
-        border: none;
-        text-decoration: none;
-        display: none;
-        box-shadow: inset 0px 21px 46px -11px rgba(51,51,51,1);
-        overflow: auto;
-    }
 
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
+    
 
     .dropdown .dropdown_content .set_text{
         font-size: 40px;
@@ -714,7 +656,6 @@
         border-bottom:1px #9c9594 solid; 
     }
 
-
     .picture_tablet{
         display: block;
     }
@@ -750,11 +691,10 @@
     }
 
     .img_sale_tablet{
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/boost_750_scaled_tablet.jpg');
         background-repeat: no-repeat;
         width: 600px;
         height: 360px;
-        background-position: -5px -5px;
     }
 
     .img_sale_mobile {
@@ -768,13 +708,6 @@
         padding-bottom: 90px;
     }
 
-    .follow_icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-    }
 
     .follow_icon{
         border: 1px solid rgba(182,209,27,1);
@@ -814,6 +747,12 @@
     .logo_tablet{
         position: absolute;
         left: 14px;
+
+        background-image: url("../img/spritesheet_logos.png");
+        background-repeat: no-repeat;
+        width: 108px;
+        height: 108px;
+        background-position: -75px -5px;
     }
 
     .logo_mobile{
@@ -828,28 +767,7 @@
         display: none;
     }
 
-    .settings_icon{
-        height: fit-content;
-        position: absolute;
-        right: 14px;
-    }
 
-    .settings_slide{
-        height: 100%;
-        width: 0;
-        max-width: 415px;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        right: 0;
-        background: linear-gradient(135deg, rgba(26,35,50,1) 0%, rgba(72,77,106,1) 27%, rgba(72,77,106,1) 29%, rgba(72,77,106,1) 37%, rgba(152,94,111,1) 57%, rgba(72,77,106,1) 73%, rgba(72,77,106,1) 79%, rgba(72,77,106,1) 81%, rgba(26,35,50,1) 98%, rgba(26,35,50,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2332', endColorstr='#1a2332', GradientType=1 );
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 0.5s;
-        box-shadow: -30px 0px 20px rgba(0,0,0,0.4);
-
-    }
 
     .settings_slide .closebtn {
         position: absolute;
@@ -949,36 +867,32 @@
     }
 
     .slideshow_img_profile:nth-child(1) {
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/street_pump.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 300px;
         height: 180px;
-        background-position: -315px -5px;
     }
     .slideshow_img_profile:nth-child(2){
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/supreme_mountain.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 300px;
         height: 180px;
-        background-position: -315px -195px;
     }
     .slideshow_img_profile:nth-child(3){
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/boost_750_scaled.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 300px;
         height: 180px;
-        background-position: -5px -5px;
     }
     .slideshow_img_profile:nth-child(4){
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/street_art_scaled.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 300px;
         height: 180px;
-        background-position: -5px -195px;
     }
 
     .slideshow_left{
@@ -1003,57 +917,19 @@
         opacity: 0.8;
     }
     
-    .slideshow_left:active, .slideshow_right:active{
-        background-color: #7d7d7d; 
-    }
+    
 
-    .profile_options{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 32px;
-    }
 
-    .profile_option{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 66%, rgba(230,230,230,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
-        border-top: 1px #9c9594 solid;
-    }
 
-    .profile_option:active{
-        box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.75);
-    }
+   
 
     .option_text{
         font-family: Roboto Regular;
         font-size: 32px;
     }
 
-    .dropdown_content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        background: rgba(245,245,245,1);
-        background: linear-gradient(to right, rgba(245,245,245,1) 0%, rgba(216,219,219,1) 51%, rgba(216,219,219,1) 59%, rgba(245,245,245,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5', GradientType=1 );
-        border: none;
-        text-decoration: none;
-        display: none;
-        box-shadow: inset 0px 21px 46px -11px rgba(51,51,51,1);
-        overflow: auto;
-    }
 
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
+   
 
     .dropdown .dropdown_content .set_text{
         font-size: 24px;
@@ -1136,12 +1012,12 @@
     }
 
     .img_sale_mobile{
-        background-image: url('../img/spritesheet_slide_iphone.png');
+        background-image: url('../img/boost_750_scaled.jpg');
         background-repeat: no-repeat;
         width: 300px;
         height: 180px;
-        background-position: -5px -5px;
     }
+
     .social_follow{
         display: flex;
         align-items: center;
@@ -1149,13 +1025,6 @@
         padding-bottom: 18.1px;
     }
 
-    .follow_icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-    }
 
     .follow_icon{
         border: 1px solid rgba(182,209,27,1);
@@ -1167,7 +1036,23 @@
         margin-right: 20px;
     }
 
+    .easter_egg1{
+        display: none;
+    }
 
+    .easter_egg1.fill_out_custom{
+        height: 191px;
+        display: block;
+    }
+
+    .easter_egg2{
+        display: none;
+    }
+
+    .easter_egg2.fill_out_brag{
+        height: 122px;
+        display: block;
+    }
 }
 
 @media screen and (min-device-width: 1200px){ 
@@ -1193,11 +1078,16 @@
     }
 
     .logo_mobile{
-        /*display: none;*/
+        display: none;
     }
 
     .logo_tablet{
-        display: none;
+        background-image: url("../img/spritesheet_logos.png");
+        background-repeat: no-repeat;
+
+        width: 108px;
+        height: 108px;
+        background-position: -75px -5px;
     }
 
     .toggle_site{
@@ -1291,36 +1181,32 @@
     }
 
     .slideshow_img_profile:nth-child(1) {
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/street_pump_tablet.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 600px;
         height: 360px;
-        background-position: -615px -5px;
     }
     .slideshow_img_profile:nth-child(2){
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/supreme_mountain_tablet.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 600px;
         height: 360px;
-        background-position: -615px -375px;
     }
     .slideshow_img_profile:nth-child(3){
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/boost_750_scaled_tablet.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 600px;
         height: 360px;
-        background-position: -5px -5px;
     }
     .slideshow_img_profile:nth-child(4){
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/street_art_scaled_tablet.jpg');
         background-repeat: no-repeat;
         display: none;
         width: 600px;
         height: 360px;
-        background-position: -5px -375px;
     }
 
     .slideshow_left{
@@ -1345,10 +1231,7 @@
         opacity: 0.8;
     }
     
-    .slideshow_left:active, .slideshow_right:active{
-        background-color: #7d7d7d; 
-    }
-
+   
     .profile_options{
         display: flex;
         flex-direction: column;
@@ -1356,46 +1239,18 @@
         padding-top: 90px;
     }
 
-    .profile_option{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 66%, rgba(230,230,230,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6', GradientType=1 );
-        border-top: 1px #9c9594 solid;
-    }
 
-    .profile_option:active{
-        box-shadow: inset 0px 0px 30px 0px rgba(0,0,0,0.75);
-    }
+
+   
 
     .option_text{
         font-family: Roboto Regular;
         font-size: 32px;
     }
 
-    .dropdown_content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        background: rgba(245,245,245,1);
-        background: linear-gradient(to right, rgba(245,245,245,1) 0%, rgba(216,219,219,1) 51%, rgba(216,219,219,1) 59%, rgba(245,245,245,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#f5f5f5', GradientType=1 );
-        border: none;
-        text-decoration: none;
-        display: none;
-        box-shadow: inset 0px 21px 46px -11px rgba(51,51,51,1);
-        overflow: auto;
-    }
+    
 
-    .dropdown {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
+   
 
     .dropdown .dropdown_content .set_text{
         font-size: 28px;
@@ -1439,7 +1294,6 @@
 
     .social_site_ipad_land{
         display: none;
-
     }
 
     .social_hot{
@@ -1473,11 +1327,10 @@
     }
 
     .img_sale_tablet{
-        background-image: url('../img/spritesheet_slide_tablet.png');
+        background-image: url('../img/boost_750_scaled_tablet.jpg');
         background-repeat: no-repeat;
         width: 600px;
         height: 360px;
-        background-position: -5px -5px;
     }
 
     .img_sale_mobile{
@@ -1490,13 +1343,7 @@
         padding-bottom: 18.1px;
     }
 
-    .follow_icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
 
-    }
 
     .follow_icon{
         border: 1px solid rgba(182,209,27,1);
@@ -1508,12 +1355,21 @@
         margin-right: 20px;
     }
 
-    .easter_egg{
+    .easter_egg1{
         display: none;
     }
 
-    .easter_egg.fill_out{
-        height: 222px;
+    .easter_egg1.fill_out_custom{
+        height: 206px;
+        display: block;
+    }
+
+    .easter_egg2{
+        display: none;
+    }
+
+    .easter_egg2.fill_out_brag{
+        height: 134px;
         display: block;
     }
 }
