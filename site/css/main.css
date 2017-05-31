@@ -155,10 +155,6 @@
         left: 140px;
     }
 
-    
-
-    
-
     .settings_slide .closebtn {
         position: absolute;
         top: 0;
@@ -255,6 +251,7 @@
         width: 300px;
         height: 180px;
     }
+
     .slideshow_img_profile:nth-child(2){
         background-image: url('../img/supreme_mountain.jpg');
         background-repeat: no-repeat;
@@ -262,6 +259,7 @@
         width: 300px;
         height: 180px;
     }
+
     .slideshow_img_profile:nth-child(3){
         background-image: url('../img/boost_750_scaled.jpg');
         background-repeat: no-repeat;
@@ -269,6 +267,7 @@
         width: 300px;
         height: 180px;
     }
+
     .slideshow_img_profile:nth-child(4){
         background-image: url('../img/street_art_scaled.jpg');
         background-repeat: no-repeat;
@@ -298,19 +297,10 @@
         background-color: #f1f1f1;
         opacity: 0.8;
     }
-    
-    
 
-    
-
-    
-
-    
     .option_text{
         font-family: Roboto Regular;
     }
-
- 
 
     .dropdown .dropdown_content .set_text{
         font-size: 20px;
@@ -369,7 +359,6 @@
         width: 100%;
         background: rgba(0, 0, 0, 0.75);
         padding: 8px 0px 8px 0px;
-        
         color: white;
         margin: 0;
         font-family: Roboto Regular;
@@ -401,8 +390,6 @@
         padding-bottom: 16px;
     }
 
-    
-
     .follow_icon{
         border: 1px solid rgba(182,209,27,1);
         background: radial-gradient(ellipse at center, rgba(121,85,72,1) 0%, rgba(222,13,173,1) 0%, rgba(127,161,152,1) 58%, rgba(182,209,27,1) 100%);
@@ -411,6 +398,14 @@
         width: 60px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .easter_egg1{
+        display: none;
+    }
+
+    .easter_egg2{
+        display: none;
     }
 }
 
@@ -459,8 +454,6 @@
     .toggle_site.clicked3{
         left: 336.5px;
     }
-
- 
 
     .settings_slide .closebtn {
         position: absolute;
@@ -560,6 +553,7 @@
         width: 600px;
         height: 360px;
     }
+
     .slideshow_img_profile:nth-child(2){
         background-image: url('../img/supreme_mountain_tablet.jpg');
         background-repeat: no-repeat;
@@ -567,6 +561,7 @@
         width: 600px;
         height: 360px;
     }
+
     .slideshow_img_profile:nth-child(3){
         background-image: url('../img/boost_750_scaled_tablet.jpg');
         background-repeat: no-repeat;
@@ -574,6 +569,7 @@
         width: 600px;
         height: 360px;
     }
+
     .slideshow_img_profile:nth-child(4){
         background-image: url('../img/street_art_scaled_tablet.jpg');
         background-repeat: no-repeat;
@@ -603,19 +599,11 @@
         background-color: #f1f1f1;
         opacity: 0.8;
     }
-    
-    
-
-
-   
 
     .option_text{
         font-family: Roboto Regular;
         font-size: 50px;
     }
-
-
-    
 
     .dropdown .dropdown_content .set_text{
         font-size: 40px;
@@ -675,7 +663,6 @@
         width: 100%;
         background: rgba(0, 0, 0, 0.75);
         padding: 8px 0px 8px 0px;
-        
         color: white;
         margin: 0;
         font-family: Roboto Regular;
@@ -719,6 +706,13 @@
         margin-right: 20px;
     }
 
+    .easter_egg1{
+        display: none;
+    }
+
+    .easter_egg2{
+        display: none;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -747,7 +741,6 @@
     .logo_tablet{
         position: absolute;
         left: 14px;
-
         background-image: url("../img/spritesheet_logos.png");
         background-repeat: no-repeat;
         width: 108px;
@@ -766,8 +759,6 @@
     .toggle_site.clicked3{
         display: none;
     }
-
-
 
     .settings_slide .closebtn {
         position: absolute;
@@ -873,6 +864,7 @@
         width: 300px;
         height: 180px;
     }
+
     .slideshow_img_profile:nth-child(2){
         background-image: url('../img/supreme_mountain.jpg');
         background-repeat: no-repeat;
@@ -880,6 +872,7 @@
         width: 300px;
         height: 180px;
     }
+
     .slideshow_img_profile:nth-child(3){
         background-image: url('../img/boost_750_scaled.jpg');
         background-repeat: no-repeat;
@@ -887,6 +880,7 @@
         width: 300px;
         height: 180px;
     }
+
     .slideshow_img_profile:nth-child(4){
         background-image: url('../img/street_art_scaled.jpg');
         background-repeat: no-repeat;
@@ -916,20 +910,11 @@
         background-color: #f1f1f1;
         opacity: 0.8;
     }
-    
-    
-
-
-
-   
 
     .option_text{
         font-family: Roboto Regular;
         font-size: 32px;
     }
-
-
-   
 
     .dropdown .dropdown_content .set_text{
         font-size: 24px;
@@ -974,7 +959,6 @@
         right: 0;
         border-left: 4px #9c9594 solid;
         text-align: center;
-
     }
 
     .social_hot{
@@ -992,11 +976,9 @@
         width: 100%;
         background: rgba(0, 0, 0, 0.75);
         padding: 8px 0px 8px 0px;
-        
         color: white;
         margin: 0;
         font-family: Roboto Regular;
-
     }
 
     .social_sale{
@@ -1024,7 +1006,6 @@
         flex-direction: column;
         padding-bottom: 18.1px;
     }
-
 
     .follow_icon{
         border: 1px solid rgba(182,209,27,1);
@@ -1084,7 +1065,6 @@
     .logo_tablet{
         background-image: url("../img/spritesheet_logos.png");
         background-repeat: no-repeat;
-
         width: 108px;
         height: 108px;
         background-position: -75px -5px;
@@ -1122,7 +1102,6 @@
 
     .focus_text {
         display: none;
-
     }
 
     .profile_info{
@@ -1187,6 +1166,7 @@
         width: 600px;
         height: 360px;
     }
+
     .slideshow_img_profile:nth-child(2){
         background-image: url('../img/supreme_mountain_tablet.jpg');
         background-repeat: no-repeat;
@@ -1194,6 +1174,7 @@
         width: 600px;
         height: 360px;
     }
+
     .slideshow_img_profile:nth-child(3){
         background-image: url('../img/boost_750_scaled_tablet.jpg');
         background-repeat: no-repeat;
@@ -1201,6 +1182,7 @@
         width: 600px;
         height: 360px;
     }
+
     .slideshow_img_profile:nth-child(4){
         background-image: url('../img/street_art_scaled_tablet.jpg');
         background-repeat: no-repeat;
@@ -1231,7 +1213,6 @@
         opacity: 0.8;
     }
     
-   
     .profile_options{
         display: flex;
         flex-direction: column;
@@ -1239,18 +1220,10 @@
         padding-top: 90px;
     }
 
-
-
-   
-
     .option_text{
         font-family: Roboto Regular;
         font-size: 32px;
     }
-
-    
-
-   
 
     .dropdown .dropdown_content .set_text{
         font-size: 28px;
@@ -1311,11 +1284,9 @@
         width: 100%;
         background: rgba(0, 0, 0, 0.75);
         padding: 8px 0px 8px 0px;
-        
         color: white;
         margin: 0;
         font-family: Roboto Regular;
-
     }
 
     .social_sale{
@@ -1336,14 +1307,13 @@
     .img_sale_mobile{
         display: none;
     }
+
     .social_follow{
         display: flex;
         align-items: center;
         flex-direction: column;
         padding-bottom: 18.1px;
     }
-
-
 
     .follow_icon{
         border: 1px solid rgba(182,209,27,1);
